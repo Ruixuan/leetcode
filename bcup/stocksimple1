@@ -1,0 +1,25 @@
+class Solution {
+public:
+    int maxProfit(vector<int> &prices) {
+        // Start typing your C/C++ solution below
+        // DO NOT write int main() function
+       int len = prices.size();
+       //int * * dp;
+	int i, j , max , profit;
+	max = 0;
+        profit = 0;
+        
+	for (i = len-1; i >= 0; i --){
+		 if (max<prices[i]) max = prices[i];
+		 if (max - prices[i] > profit) profit = max - prices[i];
+
+	}
+
+	return profit;
+		
+       
+      
+    }
+};
+
+

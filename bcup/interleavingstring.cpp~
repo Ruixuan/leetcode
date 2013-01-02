@@ -1,0 +1,27 @@
+class Solution {
+public:
+    bool isInterleave(string s1, string s2, string s3) {
+        // Start typing your C/C++ solution below
+        // DO NOT write int main() function    
+        
+	int m,n;
+
+	m = s1.length();
+	n = s2.length();
+         
+	if ( (m+n) != s3.length() ) return false;
+        
+	vector <int> oneline(n,0);
+	vector < vector<int> >  dp(m,oneline);
+
+	 
+
+
+	 
+	
+
+		 
+
+    }
+};
+
