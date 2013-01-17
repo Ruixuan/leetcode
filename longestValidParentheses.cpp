@@ -20,7 +20,7 @@ public:
 				   if ( i - dp[i-1] == 0 ) continue;
 				   if ( s[i-dp[i-1]-1] == ')' ) continue;
 				    dp[i] = dp[i-1] + 2;
-                   j = i-dp[i-1]- 2;					
+                  		   j = i-dp[i-1]- 2;					
 				}
 				if (j >=0) dp[i] += dp[j];
 			    
