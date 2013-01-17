@@ -5,7 +5,7 @@ public:
         // DO NOT write int main() function
         int n, i, max , j;
         n = s.length();
-        vector < int> dp ( n , 0);
+        vector < int> dp ( n , 0);// dp[i] longest valid string end at s[i]
         max = 0;
         for ( i = 1 ; i < n ; i++ ){
 		     dp[i] = 0;
