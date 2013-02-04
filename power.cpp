@@ -25,5 +25,34 @@ public:
 		return 1/(   power_half * power_half * tmp );  
     }
 };
+// this is another solution 
 
+
+class Solution {
+public:
+    double pow(double x, int n) {
+        // Start typing your C/C++ solution below
+        // DO NOT write int main() function
+        if ( n == 0) return 1;
+        if ( n < 0 ) {
+            n = -n;
+            x = 1/x;
+        }
+        double result, tmp;
+        int index;
+        index  = n;
+        result = 1;
+        tmp = x;
+        while(index>0){
+            if (index&1){
+                result = result * tmp;
+            }
+            tmp = tmp*tmp;
+            index = index >> 1;
+        }
+         
+        return result;
+        
+    }
+};
 
